@@ -2,3 +2,5 @@ rootProject.name = 'springmvc'
 
 include 'mvcproject'
 include 'mvcstudy'
+include 'thymeleaf-basic'
+
