@@ -1,6 +1,7 @@
 package hello.thymeleaf.basic;
 
 import lombok.Data;
+import org.springframework.boot.Banner;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -120,4 +121,11 @@ public class BasicController {
 
         model.addAttribute("users",list);
     }
+
+    @GetMapping("/condition")
+    public String condition(Model model){
+        addUsers(model);
+        return "basic/condition";
+    }
+
 }
